@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk</title>
+    <style>
+        .Issue_list{
+            font-size: 20px;
+        }
+        .center {
+            text-align: left;
+            color: black;
+            background-color: blue;
+            font-size: 70px;
+            }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em;
+            }
+        form {
+            max-width: 500px;
+            margin: auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 48px;
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+            }
+        hr{
+            border: none;
+            border-top: 2px 
+            dotted black;
+        }
+        h2 {
+            text-align: center;
+            }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 48px;
+            color: white;
+            font-size: 16px;
+            }
+        button:hover {
+            background-color: #0056b3;
+            }
+        footer{
+            text-align: right;
+            }
+    </style>
+<header class="center"><sub><img src="CityCode Icon.jpg" alt="Help!"></sub><b> CityCode </b>
+<i style="color: gold;">Help Desk</i></header></head>
+<body>
+    <h2>Frequent Issues</h2>
+    <p>
+        <form action="0" class="Issue_list">
+       <b>Hardware & Device Issues </b> <br>
+	    <input type="radio" id="complaint1" name="freq_issue"  value="1">
+        <label for="complaint01" >Computer will not start or boot up</label><br>
+        <input type="radio" id="complaint2" name="freq_issue"  value="2">
+        <label for="complaint02" >Keyboard/mouse not responding</label><br>
+        <input type="radio" id="complaint3" name="freq_issue"  value="3">
+        <label for="complaint03" >Monitor/display issues [flickering, no signal, blank screen]</label><br>
+        <input type="radio" id="complaint4" name="freq_issue"  value="4">
+        <label for="complaint04" >Printer not printing or paper jams</label><br>
+        <input type="radio" id="complaint5" name="freq_issue"  value="5">
+        <label for="complaint05" >Projector or external display not connecting</label><br>
+        <input type="radio" id="complaint6" name="freq_issue"  value="6">
+        <label for="complaint06" >Frequent overheating or system noise</label><br>
+        <input type="radio" id="complaint7" name="freq_issue"  value="7">
+        <label for="complaint07" >Battery or power adapter issues on laptops</label><br><br>
+        <hr>
+        
+        <b>Network & Connectivity</b> <br>
+        <input type="radio" id="complaint8" name="freq_issue"  value="8">
+        <label for="complaint08" >No internet access or unstable connection</label><br>
+        <input type="radio" id="complaint9" name="freq_issue"  value="9">
+        <label for="complaint09" >Wi-Fi not connecting or dropping frequently</label><br>
+        <input type="radio" id="complaint10" name="freq_issue"  value="10">
+        <label for="complaint10" >Cannot access shared network drives or folders</label><br>
+        <input type="radio" id="complaint11" name="freq_issue"  value="11">
+        <label for="complaint11" >VPN connection issues [for remote access]</label><br>
+        <input type="radio" id="complaint12" name="freq_issue"  value="12">
+        <label for="complaint12" >Slow internet browsing or downloads</label><br><br>
+        <hr>
+        
+        <b>Software & Applications</b> <br>
+        <input type="radio" id="complaint13" name="freq_issue"  value="13">
+        <label for="complaint13" >Microsoft 365 apps [Outlook, Excel, Teams] not responding</label><br>
+        <input type="radio" id="complaint14" name="freq_issue"  value="14">
+        <label for="complaint14" >Outlook not syncing or sending/receiving emails</label><br>
+        <input type="radio" id="complaint15" name="freq_issue"  value="15">
+        <label for="complaint15" >Login issues on enterprise apps [e.g., M-Files, CRM, HRMS]</label><br>
+        <input type="radio" id="complaint16" name="freq_issue"  value="16">
+        <label for="complaint16" >Software crashes or freezes</label><br>
+        <input type="radio" id="complaint17" name="freq_issue"  value="17">
+        <label for="complaint17" >Missing or corrupted software installations</label><br>
+        <input type="radio" id="complaint18" name="freq_issue"  value="18">
+        <label for="complaint18" >Document version conflicts or sync errors</label><br><br>
+        <hr>
+        
+        <b>Access & Security</b> <br>
+        <input type="radio" id="complaint19" name="freq_issue"  value="19">
+        <label for="complaint19" >Forgotten passwords or locked accounts</label><br>
+        <input type="radio" id="complaint20" name="freq_issue"  value="20">
+        <label for="complaint20" >Two-factor authentication [2FA] errors</label><br>
+        <input type="radio" id="complaint21" name="freq_issue"  value="21">
+        <label for="complaint21" >Access denied to certain files or systems</label><br>
+        <input type="radio" id="complaint22" name="freq_issue"  value="22">
+        <label for="complaint22" >Firewall or antivirus blocking legitimate sites or apps</label><br>
+        <input type="radio" id="complaint23" name="freq_issue"  value="23">
+        <label for="complaint23" >Suspicious emails or phishing concerns</label><br><br>
+        <hr>
+        
+        <b>Printing & Scanning</b> <br>
+        <input type="radio" id="complaint24" name="freq_issue"  value="24">
+        <label for="complaint24" >Unable to connect to network printers</label><br>
+        <input type="radio" id="complaint25" name="freq_issue"  value="25">
+        <label for="complaint25" >Scanned documents not sending to email or folder</label><br>
+        <input type="radio" id="complaint26" name="freq_issue"  value="26">
+        <label for="complaint26" >Low toner or ink warning [frequent reports]</label><br>
+        <input type="radio" id="complaint27" name="freq_issue"  value="27">
+        <label for="complaint27" >Misaligned or poor print quality</label><br><br>
+        <hr>
+        
+        <b>Communication & Collaboration Tools</b> <br>
+        <input type="radio" id="complaint28" name="freq_issue"  value="28">
+        <label for="complaint28" >Microsoft Teams not joining meetings or crashing</label><br>
+        <input type="radio" id="complaint29" name="freq_issue"  value="29">
+        <label for="complaint29" >Zoom/Google Meet audio/video issues</label><br>
+        <input type="radio" id="complaint30" name="freq_issue"  value="30">
+        <label for="complaint30" >Microphone or camera not detected</label><br>
+        <input type="radio" id="complaint31" name="freq_issue"  value="31">
+        <label for="complaint31" >Shared calendar not syncing</label><br><br>
+        <hr>
+        
+        <b>File & Data Management</b> <br>
+        <input type="radio" id="complaint32" name="freq_issue"  value="32">
+        <label for="complaint32" >Deleted or missing files</label><br>
+        <input type="radio" id="complaint33" name="freq_issue"  value="33">
+        <label for="complaint33" >Access denied to shared folders</label><br>
+        <input type="radio" id="complaint34" name="freq_issue"  value="34">
+        <label for="complaint34" >Backup failure or unconfirmed backup status</label><br>
+        <input type="radio" id="complaint35" name="freq_issue"  value="35">
+        <label for="complaint35" >Confusion over file versions or overwrites</label><br><br>
+        <hr>
+        
+        <b>User Configuration & Settings</b> <br>
+        <input type="radio" id="complaint36" name="freq_issue"  value="36">
+        <label for="complaint36" >Wrong default printer or audio device</label><br>
+        <input type="radio" id="complaint37" name="freq_issue"  value="37">
+        <label for="complaint37" >Time/date not syncing properly</label><br>
+        <input type="radio" id="complaint38" name="freq_issue"  value="38">
+        <label for="complaint38" >Email signature issues</label><br>
+        <input type="radio" id="complaint39" name="freq_issue"  value="39">
+        <label for="complaint39" >Software update notifications causing confusion</label><br>
+        <input type="radio" id="complaint40" name="freq_issue"  value="40">
+        <label for="complaint40" >Wrong user profile loading</label><br><br>
+        
+        
+        <button type="submit">Submit Ticket</button><br>
+        <footer>None of these? <a href="/Help_DeskC.html">Specify Issue</a></footer>
+        </form> 
+    </p>
+    
+</body>
+</html>
