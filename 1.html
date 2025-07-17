@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Help Desk Form</title>
+</head>
+<body>
+
+  <h2>Help Desk Request</h2>
+
+  <form name="helpdesk" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="helpdesk" />
+
+    <p>
+      <label>Your Name: <input type="text" name="name" required /></label>
+    </p>
+
+    <p>
+      <label>Issue Type:</label><br />
+      <label><input type="radio" name="issue" value="hardware" required> Hardware Issue</label><br />
+      <label><input type="radio" name="issue" value="software"> Software Problem</label><br />
+      <label><input type="radio" name="issue" value="network"> Network Connectivity</label><br />
+      <label><input type="radio" name="issue" value="other"> Other</label>
+    </p>
+
+    <p>
+      <label>Description:<br />
+        <textarea name="description" rows="5" required></textarea>
+      </label>
+    </p>
+
+    <p><button type="submit">Submit</button></p>
+  </form>
+
+</body>
+</html>
